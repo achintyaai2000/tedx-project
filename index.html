@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEDxMDIGurgaon 7.0 — PIVOT</title>
+<meta name="description" content="TEDxMDIGurgaon 7.0 — PIVOT. The moment everything turns. An independently organized TED event.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NOISE / GRAIN OVERLAY ============ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="pivot-mark" aria-hidden="true"><span class="pivot-mark__needle"></span></span>
+      <span class="nav__wordmark">TEDx<span class="nav__x">x</span><br><span class="nav__sub">MDIGurgaon</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#theme">Theme</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#tickets">Tickets</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#theme">Theme</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#tickets">Tickets</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__ring hero__ring--1"></div>
+    <div class="hero__ring hero__ring--2"></div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow reveal">TEDxMDIGurgaon 7.0 &nbsp;·&nbsp; <span id="eventDate">15 February 2027</span> &nbsp;·&nbsp; MDI Campus, Gurugram</p>
+
+    <h1 class="hero__title reveal">
+      <span class="hero__title-line">PIVOT<span class="hero__dot">.</span></span>
+    </h1>
+    <p class="hero__subhead reveal">The moment everything turns.</p>
+
+    <div class="eq reveal" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <p class="hero__desc reveal">
+      Six speakers. One stage. A day built around the instant a career, a belief,
+      or a single decision changes direction — and never turns back.
+    </p>
+
+    <div class="hero__cta reveal">
+      <a href="#tickets" class="btn btn--primary">Reserve Your Seat</a>
+      <a href="#hero-clip" class="btn btn--ghost">Watch the Legacy Talk ↓</a>
+    </div>
+  </div>
+
+  <!-- ===== HERO CLIP / TEDx6.0 Metanoia integration ===== -->
+  <div class="hero__clip reveal" id="hero-clip">
+    <div class="clip-card">
+      <div class="clip-card__label">
+        <span class="tag">TEDx6.0 — Metanoia</span>
+        <span class="tag tag--muted">Where PIVOT began</span>
+      </div>
+
+      <div class="clip-card__player" id="clipPlayer">
+        <!-- YouTube iframe is injected by script.js using CONFIG.heroClip
+             so the 5–10s window can be tuned from one place -->
+        <div class="clip-card__player-fallback">
+          <button class="clip-play" id="clipPlayBtn" aria-label="Play highlight clip">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none"><path d="M0 0L22 13L0 26V0Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="clip-card__meta">
+        <p class="clip-card__speaker" id="speakerName">Dr. Dheeraj Dogra</p>
+        <p class="clip-card__quote" id="speakerQuote">
+          “Add their exact quote here once you've watched the talk — keep it under
+          two lines so it reads well at every screen size.”
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span></span> Scroll</div>
+</section>
+
+<!-- ============ THEME REVEAL ============ -->
+<section class="theme" id="theme">
+  <div class="section-head">
+    <p class="eyebrow reveal">01 — Theme Reveal</p>
+    <h2 class="section-title reveal">Every idea worth spreading<br>started as a pivot.</h2>
+  </div>
+
+  <div class="theme__body">
+    <p class="theme__lede reveal">
+      TEDx6.0 asked MDI Gurgaon to change the lens. TEDx7.0 asks what happens the
+      instant you do, the pivot itself. It's the engineer who walks into a MDI
+      classroom for the first time. The dancer who becomes an analyst. The founder
+      who kills the product to save the company. PIVOT is a day of six people who
+      turned, and never went back.
+    </p>
+
+    <div class="theme__pillars">
+      <article class="pillar reveal">
+        <span class="pillar__mark">◐</span>
+        <h3>Turning Points</h3>
+        <p>The single decision, quit, or leap that split a life into before and after.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__mark">◑</span>
+        <h3>Second Drafts</h3>
+        <p>What it takes to rebuild a career, a company, or an identity from scratch, on purpose.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="pillar__mark">◒</span>
+        <h3>The Unlearn</h3>
+        <p>Letting go of the thing you were best at, to get good at the thing that matters more.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPEAKER LINE-UP ============ -->
+<section class="speakers" id="speakers">
+  <div class="section-head">
+    <p class="eyebrow reveal">02 — Speaker Line-up</p>
+    <h2 class="section-title reveal">Six voices.<br>One turn each.</h2>
+    <p class="speakers__note reveal">
+      Six speakers, six pivots, six different stories. Experience this journey together.
+    </p>
+  </div>
+
+  <div class="speakers__grid">
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:1">
+            <img src="images/AnkurWarikoo.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 01</span>
+      <h3>Ankur Warikoo</h3>
+      <p class="speaker-card__role">Indian entrepreneur</p>
+    </article>
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:2">
+        <img src="images/Ashwini Vaishnaw.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 02</span>
+      <h3>Ashwini Vaishnaw</h3>
+      <p class="speaker-card__role">Union Minister of Railways of India</p>
+    </article>
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:3">
+        <img src="images/Nitin Gadkari.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 03</span>
+      <h3>Nitin Gadkari</h3>
+      <p class="speaker-card__role">Minister of Road Transport and Highways of India</p>
+    </article>
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:4">
+        <img src="images/Ritwik Bhowmik.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 04</span>
+      <h3>Ritwik Bhowmik</h3>
+      <p class="speaker-card__role">Indian actor</p>
+    </article>
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:5">
+        <img src="images/Shreya Ghoshal.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 05</span>
+      <h3>Shreya Ghoshal</h3>
+      <p class="speaker-card__role">Indian playback singer</p>
+    </article>
+    <article class="speaker-card reveal">
+      <div class="speaker-card__photo" style="--i:6">
+        <img src="images/Terence Lewis.webp" alt="Global illustration" />
+      </div>
+      <span class="speaker-card__status">Talk 06</span>
+      <h3>Terence Lewish</h3>
+      <p class="speaker-card__role">Indian dancer and choreographer</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ TICKET BOOKING ============ -->
+<section class="tickets" id="tickets">
+  <div class="section-head">
+    <p class="eyebrow eyebrow--light reveal">03 — Tickets</p>
+    <h2 class="section-title section-title--light reveal">Secure your seat.<br>Seats are numbered, not infinite.</h2>
+  </div>
+
+  <div class="tickets__grid">
+    <article class="ticket-card reveal">
+      <h3>Student</h3>
+      <p class="ticket-card__desc">Valid college ID required at entry</p>
+      <p class="ticket-card__price">₹499</p>
+      <ul class="ticket-card__perks">
+        <li>General seating</li>
+        <li>Event kit</li>
+        <li>Networking lunch</li>
+      </ul>
+      <a href="#" class="btn btn--outline">Book Now</a>
+    </article>
+
+    <article class="ticket-card ticket-card--featured reveal">
+      <span class="ticket-card__badge">Most booked</span>
+      <h3>General</h3>
+      <p class="ticket-card__desc">Open to all</p>
+      <p class="ticket-card__price">₹999</p>
+      <ul class="ticket-card__perks">
+        <li>Priority seating</li>
+        <li>Event kit + merch</li>
+        <li>Networking lunch</li>
+        <li>Speaker meet &amp; greet</li>
+      </ul>
+      <a href="#" class="btn btn--primary btn--block">Book Now</a>
+    </article>
+
+    <article class="ticket-card reveal">
+      <h3>Patron</h3>
+      <p class="ticket-card__desc">Limited to 25 seats</p>
+      <p class="ticket-card__price">₹2,499</p>
+      <ul class="ticket-card__perks">
+        <li>Front-row seating</li>
+        <li>Premium kit + merch</li>
+        <li>Speaker dinner invite</li>
+        <li>Reserved parking</li>
+      </ul>
+      <a href="#" class="btn btn--outline">Book Now</a>
+    </article>
+  </div>
+
+  <div class="tickets__info reveal">
+    <span><strong>Venue</strong> — MDI Gurgaon Auditorium, Mehrauli Road, Gurugram</span>
+    <span><strong>Date</strong> — <span id="eventDate2">15 February 2027</span></span>
+    <span><strong>Doors</strong> — 9:00 AM</span>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <span class="pivot-mark pivot-mark--footer" aria-hidden="true"><span class="pivot-mark__needle"></span></span>
+      <div>
+        <p class="footer__wordmark">TEDx<span class="nav__x">x</span>MDIGurgaon</p>
+        <p class="footer__tagline">x = independently organized TED event</p>
+      </div>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#theme">Theme</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#tickets">Tickets</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <p>MDI Gurgaon · Mehrauli Road, Sukhrali, Gurugram, Haryana</p>
+    <p>This independent TEDx event is operated under license from TED.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
